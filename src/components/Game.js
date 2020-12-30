@@ -1,9 +1,16 @@
 import React from "react";
+import Board from './Board'
 
 const Game = () => {
+  const handleClick = () => {}
+
+  const jumpTo = () => {}
+
+  const renderMoves = () => {}
+
   return (
     <>
-      <h1>Game</h1>
+      <Board onClick={handleClick} />
     </>
   );
 };
