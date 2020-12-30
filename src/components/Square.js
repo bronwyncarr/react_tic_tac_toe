@@ -3,7 +3,6 @@ import "./Square.css";
 
 // Destructure props obj to {handleClick, value}
 const Square = ({ onClick, value }) => {
-
   //  If value is X or O styling applied, otherwise null falls through.
   const style = (value) => {
     if (value === "X") {
