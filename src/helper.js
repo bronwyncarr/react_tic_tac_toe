@@ -1,5 +1,5 @@
 // Calculate winner function from React docs
-
+// export function and importing { calculateWinner } in Game
 export function calculateWinner(squares) {
   // Lookup array includes all winning combinations
   const lines = [
@@ -10,7 +10,7 @@ export function calculateWinner(squares) {
     [1, 4, 7],
     [2, 5, 8],
     [0, 4, 8],
-    [2, 4, 6]
+    [2, 4, 6],
   ];
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
