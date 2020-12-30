@@ -3,18 +3,8 @@ import "./Square.css";
 
 // Destructure props obj to {handleClick, value}
 const Square = ({ onClick, value }) => {
-  // let style;
-  // switch (value) {
-  //   case "X":
-  //     style = "cross";
-  //     break;
-  //   case "O":
-  //     style = "ooo";
-  //     break;
-  //   default:
-  //     break;
-  // }
 
+  //  If value is X or O styling applied, otherwise null falls through.
   const style = (value) => {
     if (value === "X") {
       return "cross";
@@ -24,7 +14,7 @@ const Square = ({ onClick, value }) => {
   };
 
   return (
-    <button className={style(value)} onClick={onClick}>
+    <button className={`btn ${style(value)}`} onClick={onClick}>
       {value}
     </button>
   );
